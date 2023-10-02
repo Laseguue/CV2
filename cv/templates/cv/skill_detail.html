@@ -1,0 +1,17 @@
+{% extends 'cv/base.html' %}
+
+{% block content %}
+    <div class="card mt-4 mb-4 shadow">
+        <div class="card-body">
+            <h2 class="card-title">Skill:</h2>
+            <p class="card-text">{{ skill.name }}</p>
+                        
+            <h2 class="card-title">Certificate Image:</h2>
+            {% if skill.certificate_image %}
+                <img src="{{ skill.certificate_image }}" alt="{{ skill.name }}" class="img-fluid mb-3">
+            {% endif %}
+            
+            <a href="{% url 'skills' %}" class="btn btn-success d-block">Précédant</a>
+        </div>
+    </div>
+{% endblock %}

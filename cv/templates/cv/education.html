@@ -1,0 +1,20 @@
+{% extends 'cv/base.html' %}
+
+{% block content %}
+    <h2 class="mt-4 mb-4">Éducation</h2>
+    <div class="row">
+        {% for education in educations %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <a href="{% url 'education_detail' diploma_id=education.id %}" class="text-decoration-none text-dark">
+                        <img src="{{ education.image }}" alt="{{ education.diploma }}" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">{{ education.diploma }}</h3>
+                            <p class="card-text">{% if education.is_ongoing %}<span class="badge badge-warning">En cours</span>{% else %}<span class="badge badge-success">Terminé</span>{% endif %}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

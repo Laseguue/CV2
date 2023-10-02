@@ -1,0 +1,19 @@
+{% extends 'cv/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="card mt-4 mb-4 shadow">
+        <div class="card-body text-center">
+            <img src="{{ personal_info.photo }}" alt="{{ personal_info.name }}" class="rounded-image mb-3">
+            <p class="card-text">Email: {{ personal_info.email }}</p>
+            <p class="card-text">{{ personal_info.summary }}</p>
+            <div class="list-group list-group-horizontal justify-content-center">
+                <a href="https://www.linkedin.com/in/arthur-seguret-052bb5288/" target="_blank" class="list-group-item list-group-item-action">
+                    <img src="{% static 'cv/icone/linkedin.svg' %}" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/Laseguue" target="_blank" class="list-group-item list-group-item-action">
+                    <img src="{% static 'cv/icone/github.svg' %}" alt="GitHub" />
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

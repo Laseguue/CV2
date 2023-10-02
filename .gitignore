@@ -1,0 +1,8 @@
+/venv
+mycvsite/db.sqlite3
+mycvsite/cv/static/cv/icone/*
+mycvsite/media/*
+.env
+datadump.json
+script.py
+script2.py

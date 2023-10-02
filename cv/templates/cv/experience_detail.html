@@ -1,0 +1,26 @@
+{% extends 'cv/base.html' %}
+
+{% block content %}
+    <div class="card mt-4 mb-4 shadow">
+        <div class="card-body">
+            <h2 class="card-title">Position:</h2>
+            <p class="card-text">{{ experience.position }}</p>
+            
+            <h2 class="card-title">Company:</h2>
+            <p class="card-text">{{ experience.company }}</p>
+            
+            <h2 class="card-title">Start Date - End Date:</h2>
+            <p class="card-text">{{ experience.start_date }} - {{ experience.end_date }}</p>
+            
+            <h2 class="card-title">Tasks:</h2>
+            <p class="card-text">{{ experience.tasks }}</p>
+            
+            <h2 class="card-title">Image:</h2>
+            {% if experience.diplome_image %}
+                <img src="{{ experience.diplome_image }}" alt="{{ experience.position }}" class="img-fluid mb-3">
+            {% endif %}
+            
+            <a href="{% url 'experience' %}" class="btn btn-success d-block">Précédant</a>
+        </div>
+    </div>
+{% endblock %}

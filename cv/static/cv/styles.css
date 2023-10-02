@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.btn-success {
+    background-color: #505050 !important;
+    border-color: #505050 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-success:hover {
+    background-color: #FFFFFF !important; /* blanc */
+    color: #505050 !important; /* gris foncé */
+}
+
+.nav-button:hover, .back-button:hover, form button:hover {
+    background-color: #8b938b;
+}
+
+.card img, .detail-container img {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+
