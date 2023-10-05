@@ -8,7 +8,7 @@
                 <div class="card h-100 shadow">
                     <a href="{% url 'experience_detail' experience_id=experience.id %}" class="text-decoration-none text-dark">
                         <div class="card-body">
-                            <h3 class="card-title">{{ experience.position }} de {{ experience.company }}</h3>
+                            <h3 class="card-title">{{ experience.position }} chez {{ experience.company }}</h3>
                             <p class="card-text">{{ experience.start_date }} - {{ experience.end_date }}</p>
                             <p class="card-text">{{ experience.tasks }}</p>
                             {% if experience.diplome_image %}

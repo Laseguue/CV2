@@ -1,7 +1,7 @@
 /venv
-mycvsite/db.sqlite3
-mycvsite/cv/static/cv/icone/*
-mycvsite/media/*
+db.sqlite3
+cv/static/cv/icone/*
+media/*
 .env
 datadump.json
 script.py
