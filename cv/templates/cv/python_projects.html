@@ -6,12 +6,14 @@
         {% for project in projects %}
             <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow">
-                    <a href="{{ project.github_link }}" class="text-decoration-none text-dark" target="_blank">
+                    <a href="{{ project.github_link }}" class="text-decoration-none text-dark d-flex align-items-center h-100" target="_blank">
                         <div class="card-body">
                             <h3 class="card-title">{{ project.title }}</h3>
                             {{ project.description|linebreaks }}
                             {% if project.readme_image %}
-                                <img src="{{ project.readme_image }}" alt="{{ project.title }}" class="img-fluid mt-3">
+                                <div class="w-100">
+                                    <img src="{{ project.readme_image }}" alt="{{ project.title }}" class="img-fluid mt-3 w-100">
+                                </div>
                             {% endif %}
                         </div>
                     </a>
