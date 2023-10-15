@@ -7,3 +7,4 @@ media/*
 datadump.json
 script.py
 script2.py
+staticfiles/*
