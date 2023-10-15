@@ -3,6 +3,7 @@ db.sqlite3
 cv/static/cv/icone/*
 media/*
 .env
+/env
 datadump.json
 script.py
 script2.py

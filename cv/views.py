@@ -11,16 +11,6 @@ def about(request):
     personal_info = PersonalInfo.objects.first()
     return render(request, 'cv/about.html', {'personal_info': personal_info})
 
-def education(request):
-    educations = Education.objects.all()
-    personal_info = PersonalInfo.objects.first() 
-    return render(request, 'cv/education.html', {'educations': educations})
-
-def education_detail(request, diploma_id):
-    diploma = get_object_or_404(Education, id=diploma_id)
-    personal_info = PersonalInfo.objects.first()
-    return render(request, 'cv/education_detail.html', {'diploma': diploma})
-
 def experience(request):
     experiences = Experience.objects.all()
     personal_info = PersonalInfo.objects.first()
