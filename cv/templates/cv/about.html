@@ -13,13 +13,14 @@
             <p>Pragmatique, optimiste et méthodique, j'apprécie particulièrement de travailler dans un environnement en évolution et de relever de nouveaux challenges.</p>
             <p class="card-text">{{ personal_info.summary }}</p>
             
-            <div class="list-group list-group-horizontal justify-content-center d-flex align-items-center">
-                <a href="{{ personal_info.cv_url }}" download="CV-Arthur-Seguret.pdf" target="_blank" class="list-group-item list-group-item-action" style="vertical-align: middle;">Télécharger mon CV</a>
-                <a href="https://www.linkedin.com/in/arthur-seguret-052bb5288/" target="_blank" class="list-group-item list-group-item-action">
-                    <img src="{% static 'cv/icone/linkedin.svg' %}" alt="LinkedIn" />
+            <div class="list-group list-group-horizontal justify-content-center d-flex align-items-center" style="height: 50px;">
+                <a href="{{ personal_info.cv_url }}" download="CV-Arthur-Seguret.pdf" target="_blank" class="list-group-item list-group-item-action" style="display: flex; align-items: center; justify-content: center; height: 50px; padding: 10px 15px;">Télécharger mon CV
                 </a>
-                <a href="https://github.com/Laseguue" target="_blank" class="list-group-item list-group-item-action">
-                    <img src="{% static 'cv/icone/github.svg' %}" alt="GitHub" />
+                <a href="https://www.linkedin.com/in/arthur-seguret-052bb5288/" target="_blank" class="list-group-item list-group-item-action" style="height: 50px;">
+                    <img src="{% static 'cv/icone/linkedin.svg' %}" alt="LinkedIn" style="height: 70%; width: auto;" />
+                </a>
+                <a href="https://github.com/Laseguue" target="_blank" class="list-group-item list-group-item-action" style="height: 50px;">
+                    <img src="{% static 'cv/icone/github.svg' %}" alt="GitHub" style="height: 70%; width: auto;" />
                 </a>
             </div>
         </div>
