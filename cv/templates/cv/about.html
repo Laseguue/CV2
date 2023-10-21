@@ -14,9 +14,7 @@
             <p class="card-text">{{ personal_info.summary }}</p>
             
             <div class="list-group list-group-horizontal justify-content-center">
-                <a href="{{ personal_info.cv_url }}" download="CV-Arthur-Seguret.pdf" class="list-group-item list-group-item-action">
-                    Télécharger mon CV  
-                </a>
+                <a href="{{ personal_info.cv_url }}" download="CV-Arthur-Seguret.pdf" target="_blank" class="list-group-item list-group-item-action" style="vertical-align: middle;">Télécharger mon CV</a>
                 <a href="https://www.linkedin.com/in/arthur-seguret-052bb5288/" target="_blank" class="list-group-item list-group-item-action">
                     <img src="{% static 'cv/icone/linkedin.svg' %}" alt="LinkedIn" />
                 </a>
