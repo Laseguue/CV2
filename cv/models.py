@@ -1,7 +1,6 @@
 from django.db import models
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
-from .forms import cf
 
 
 class PersonalInfo(models.Model):
